@@ -6,7 +6,7 @@ const postRoutes = require("./routes/postRoutes");
 
 mongoose.set('strictQuery', true);
 // let url = 'mongodb://localhost:27017/instaApi';
-let atlasUrl = "mongodb+srv://yogeshthakare402:Ypgesh402@cluster0.426av8b.mongodb.net/?retryWrites=true&w=majority"
+let atlasUrl = "mongodb+srv://yogeshthakare402:Yogesh402@cluster0.426av8b.mongodb.net/?retryWrites=true&w=majority"
 mongoose.connect(atlasUrl)
 .then(console.log("Connected to InstatApi DB"))
 .catch(console.error);
