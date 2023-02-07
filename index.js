@@ -3,8 +3,11 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const postRoutes = require("./routes/postRoutes");
+
 mongoose.set('strictQuery', true);
-mongoose.connect('mongodb://localhost:27017/instaApi')
+// let url = 'mongodb://localhost:27017/instaApi';
+let atlasUrl = "mongodb+srv://yogeshthakare402:Ypgesh402@cluster0.426av8b.mongodb.net/?retryWrites=true&w=majority"
+mongoose.connect(atlasUrl)
 .then(console.log("Connected to InstatApi DB"))
 .catch(console.error);
 
